@@ -8,4 +8,8 @@
     Album Page
     <span th:text="${myModel.title}"/>
 </div>
+<form method="post" enctype="multipart/form-data" action="/uploadImage">
+    <input type="file" name="imageFile"/>
+    <input type="submit" value="upload"/>
+</form>
 </body>

@@ -7,14 +7,14 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@RequestMapping("/album")
+//@RequestMapping("/album")
 public class Albums {
 //    @GetMapping("/")
 //    public String test() {
 //        return "album";
 //    }
 
-    @GetMapping("/model/{name}")
+    @GetMapping("/album/{name}")
     public String albumModel(@PathVariable String name, Model modelVar) {
         MyModel myModel = new MyModel();
         myModel.title = "title";
